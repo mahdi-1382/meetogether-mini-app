@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <title>MEETTOGETHER</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar"><div><div class="eyebrow">MEETTOGETHER</div><h1 id="hello">در حال ورود...</h1></div><div class="avatar" id="avatar">M</div></header>
+    <section class="hero"><div><span class="pill">Mini App</span><h2>آدم‌های جدید، رویدادهای جدید</h2><p>پروفایل، دوستیابی و رویدادها را از همین‌جا مدیریت کن.</p></div></section>
+    <nav class="tabs" aria-label="بخش‌ها"><button class="tab active" data-screen="home">خانه</button><button class="tab" data-screen="discover">دوستیابی</button><button class="tab" data-screen="events">رویدادها</button><button class="tab" data-screen="profile">پروفایل</button></nav>
+    <section id="home" class="screen active"><div class="grid"><button class="card" data-screen="discover"><b>❤️ پیدا کردن افراد</b><span>پروفایل‌های قابل نمایش را ببین.</span></button><button class="card" data-screen="events"><b>📍 رویدادها</b><span>رویدادهای منتشرشده را بررسی کن.</span></button><button class="card" data-screen="profile"><b>👤 پروفایل من</b><span>اطلاعات و وضعیت حساب.</span></button></div></section>
+    <section id="discover" class="screen"><div class="section-title"><h2>دوستیابی</h2><button class="small" onclick="loadDiscover()">به‌روزرسانی</button></div><div id="discoverList" class="list"><div class="loading">در حال دریافت...</div></div></section>
+    <section id="events" class="screen"><div class="section-title"><h2>رویدادها</h2><button class="small" onclick="loadEvents()">به‌روزرسانی</button></div><div id="eventsList" class="list"><div class="loading">در حال دریافت...</div></div></section>
+    <section id="profile" class="screen"><div id="profileCard" class="profile-card loading">در حال دریافت...</div></section>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
